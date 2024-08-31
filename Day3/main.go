@@ -114,6 +114,7 @@ func find(matrix[][]int,key int,value int) int{
 	//fmt.Printf("Called with key %d and value %d\n",key,value)
 	dirs:=[]int {-1,0,1}
 	visited:=make(map[int][]Pair)
+	//Make a list of all numbers(actually the index span of the numbers) adjacent to a * and store it indexing it with the row
 	for _,x:=range dirs {
 		for _,y:=range dirs {
 			i:=key+x
